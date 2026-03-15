@@ -1,6 +1,6 @@
 {
   "name": "nextbol-ai",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -13,7 +13,9 @@
     "react-dom": "^18.3.0",
     "@supabase/supabase-js": "^2.45.0",
     "openai": "^4.56.0",
-    "stripe": "^16.8.0"
+    "stripe": "^16.8.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",

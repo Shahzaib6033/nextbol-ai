@@ -14,6 +14,8 @@
   --accent-glow: rgba(111, 95, 246, 0.15);
   --green: #22C55E;
   --red: #EF4444;
+  --yellow: #F59E0B;
+  --blue: #3B82F6;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -31,12 +33,10 @@ body {
   line-height: 2.2;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
-/* Gradient text */
 .gradient-text {
   background: linear-gradient(135deg, #6F5FF6, #06B6D4, #22C55E);
   background-size: 200% 200%;
@@ -69,7 +69,6 @@ body {
 
 .animate-fade { animation: fadeIn 0.5s ease-out forwards; }
 
-/* Output cursor effect */
 .typing-cursor::after {
   content: '';
   display: inline-block;
@@ -81,7 +80,6 @@ body {
   vertical-align: text-bottom;
 }
 
-/* Hero background grid */
 .hero-grid {
   position: absolute;
   inset: 0;
@@ -91,4 +89,14 @@ body {
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
   pointer-events: none;
+}
+
+/* Chat message styles */
+.chat-user {
+  background: rgba(111, 95, 246, 0.08);
+  border: 1px solid rgba(111, 95, 246, 0.15);
+}
+.chat-ai {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
 }
